@@ -13,6 +13,7 @@ services:
       - db
     volumes:
       - ./www:/var/www/html
+      - ./config/php/php.ini:/usr/local/etc/php/php.ini
       - ./logs/apache2:/var/log/apache2
   db:
     image: mysql:latest
